@@ -90,8 +90,7 @@ span {
   justify-content: space-between;
   align-items: center;
   max-width: 1140px;
-  margin: 0 auto;
-  margin-top: 120px;
+  margin: 120px auto;
 }
 
 .banner-title {
@@ -139,7 +138,7 @@ span {
 
 .cards {
   margin-top: 49px;
-  margin-bottom: 83px;
+  /* margin-bottom: 83.3px; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
@@ -192,6 +191,95 @@ span {
 
 /* ---------------------------------------Flower & Plants Lover Styles---------------------------------------------- */
 
+.flower-plant-lover-sec {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 210.3px;
+}
+
+.flower-plant-lover-container {
+  display: flex;
+  gap: 60px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flower-plant-lover-container-left {
+  position: relative;
+  width: 540px;
+  height: 597px;
+}
+
+.flower-plant-lover-container-right {
+  width: 540px;
+  height: 521px;
+}
+
+.flower-plant-lover-badge {
+  width: 286px;
+  height: 286px;
+  position: absolute;
+  left: 347px;
+  top: -127px;
+  background-color: transparent;
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.flower-plant-lover-container-title {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Noto Serif", sans-serif;
+  margin-bottom: 20px;
+}
+
+.flower-plant-lover-container-list-texts {
+  width: 540px;
+  height: 108px;
+}
+
+.flower-plant-lover-container-list-texts > li {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------------------------------Latest Deal Styles------------------------------------------------ */
+
+.latest-deal-sec {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 133.88px;
+}
+
+.latest-deal-title {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Noto Serif", sans-serif;
+  text-align: center;
+}
+
+.latest-deal-desc {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 120px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 /* 
 ***********************************************************************************************************************
                                                   Responsive Styles 
@@ -212,8 +300,17 @@ span {
     align-items: center;
   }
 
+  .banner-left {
+    margin: 0 16px;
+  }
+
   .banner-img {
     width: 100%;
+  }
+
+  .our-plants-title,
+  .our-plants-desc {
+    text-align: center;
   }
 
   .cards {
