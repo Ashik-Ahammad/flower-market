@@ -10,6 +10,10 @@
   margin: 0;
 }
 
+span {
+  color: rgb(233, 90, 8);
+}
+
 /* -----------------------------------------------Navbar_Styles-------------------------------------------------- */
 
 .navbar {
@@ -78,13 +82,58 @@
   line-height: 24px;
 }
 
+/* -----------------------------------------------Banner_Styles-------------------------------------------------- */
 
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
 
+.banner-title {
+  font-family: "Noto Serif", sans-serif;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 89px;
+}
 
+.banner-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.5);
+}
 
+.navbar-logo > img:hover{
+  cursor: pointer;
+}
 
+/* -----------------------------------------------Our-Plants_Styles------------------------------------------------- */
 
+.our-plants-sec {
+  margin-top: 120px;
+}
 
+.our-plants-title {
+  text-align: center;
+  font-family: "Noto Serif", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+
+}
+
+.our-plants-desc {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
 
 /* 
 ***********************************************************************************************************************
@@ -92,12 +141,10 @@
 ***********************************************************************************************************************
 */
 
-
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
   .nav-links a:nth-child(1),
   .nav-links a:nth-child(2),
-  .nav-links a:nth-child(3) 
-  {
-    display:none;
+  .nav-links a:nth-child(3) {
+    display: none;
   }
 }
