@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* 
+  font-family: "Noto Serif", serif;
+  font-family: "Inter", sans-serif;
+*/
+
+* {
+  margin: 0;
+}
+
+/* -----------------------------------------------Navbar_Styles-------------------------------------------------- */
+
+.navbar {
+  padding: 10px 0;
+  width: 100%;
+}
+
+.nav-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo img {
+  width: 135px;
+  height: 82px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 48px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+.nav-links a:nth-child(1) {
+  color: rgb(37, 36, 50);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.nav-links a:nth-child(2) {
+  color: rgb(137, 135, 161);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.nav-links a:nth-child(3) {
+  color: rgb(137, 135, 161);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.nav-links a:nth-child(4) {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+/* 
+***********************************************************************************************************************
+                                                  Responsive Styles 
+***********************************************************************************************************************
+*/
+
+
+@media screen and (max-width: 576px){
+  .nav-links a:nth-child(1),
+  .nav-links a:nth-child(2),
+  .nav-links a:nth-child(3) 
+  {
+    display:none;
+  }
+}
