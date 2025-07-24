@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-/* 
-  font-family: "Noto Serif", serif;
-  font-family: "Inter", sans-serif;
-*/
-
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: #f5f8ff;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+/* Shared Style */
 span {
   color: rgb(233, 90, 8);
 }
@@ -138,7 +140,6 @@ span {
 
 .cards {
   margin-top: 49px;
-  /* margin-bottom: 83.3px; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
@@ -532,56 +533,46 @@ span {
   }
 
   .banner {
-    display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 16px;
   }
 
   .banner-left {
-    margin: 0 16px;
+    margin: 0;
   }
 
   .banner-img {
     width: 100%;
   }
 
-  .our-plants-title,
-  .our-plants-desc {
-    text-align: center;
-  }
-
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 10px;
-    margin-right: 10px;
+    gap: 12px;
+    padding: 0 12px;
   }
 
   .flower-plant-lover-container {
-    display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 0 16px;
   }
 
   .flower-plant-lover-img {
-    max-width: 95%;
+    max-width: 100%;
   }
 
   .flower-plant-lover-badge {
-    visibility: hidden;
+    display: none;
   }
 
   .deal-layout {
     flex-direction: column;
-    height: auto;
     gap: 16px;
+    padding: 0 16px;
   }
 
   .deal-layout-left,
-  .deal-layout-right {
-    width: 100%;
-  }
-
+  .deal-layout-right,
   .deal-layout-left-1,
   .deal-layout-left-2 {
     width: 100%;
@@ -593,44 +584,26 @@ span {
     height: 250px;
   }
 
-  .latest-deal-title {
-    font-size: 38px;
-  }
-
-  .latest-deal-desc {
-    font-size: 18px;
-    margin-bottom: 60px;
-  }
-
-  .deal-layout-left h4,
-  .deal-layout-right h4 {
+  .newsletter-section {
     width: 100%;
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-
-  .deal-layout-right h4 {
-    font-size: 28px;
-  }
-
-  .deal-layout-right-a {
-    font-size: 20px;
+    max-width: 100%;
+    padding: 20px;
   }
 
   .newsletter-title {
-    font-size: 20px;
+    font-size: 38px;
     font-weight: 700;
   }
 
-  .newsletter-section {
-    background-image: url("../assets/news-letter-bg.png");
-    max-width: 91.7%;
-    height: 275px;
+  .newsletter-input,
+  .newsletter-button {
+    width: 100%;
   }
 
-  .footer{
-    display: flex;
+  .footer {
     flex-direction: column;
-    margin-left: 20px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0 16px;
   }
 }
