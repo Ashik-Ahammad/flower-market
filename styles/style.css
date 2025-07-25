@@ -246,6 +246,7 @@ span {
 }
 
 .flower-plant-lover-container-list-texts {
+  padding-left: 30px;
   height: 108px;
 }
 
@@ -548,6 +549,11 @@ span {
 
   .our-plants-desc br {
     display: none;
+    margin: 15px;
+  }
+
+  .our-plants-desc {
+    margin: 15px;
   }
 
   .flower-plant-lover-sec {
@@ -612,6 +618,10 @@ span {
   .deal-layout-left-2,
   .deal-layout-right {
     height: 250px;
+  }
+
+  .deal-layout-left {
+    gap: 16px;
   }
 
   .deal-layout-right h4 {
